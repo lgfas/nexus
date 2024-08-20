@@ -1,0 +1,40 @@
+.banner-form {
+  align-self: start;
+  background: #1a1a1a;
+  padding: 100px 40px;
+  border-radius: 30px;
+  color: #ffffff;
+}
+
+.banner-form h3 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
+
+.form {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.form label {
+  display: none;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font: 200 14px "Montserrat", sans-serif;
+  background: #141416;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form textarea {
+  resize: none;
+}

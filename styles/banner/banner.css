@@ -1,0 +1,35 @@
+.banner {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+.banner-intro {
+  align-self: center;
+  background: #1a1a1a;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 100px 40px;
+  border-radius: 30px;
+  color: #ffffff;
+}
+
+.banner-intro p {
+  font-size: 14px;
+  letter-spacing: 4px;
+}
+
+.banner-intro h2 {
+  margin-top: 10px;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.banner-intro span {
+  font-weight: bold;
+}
+
+.banner-intro a {
+  margin-top: 32px;
+}

@@ -7,3 +7,6 @@
 /* Banner */
 @import url("./banner/banner.css");
 @import url("./banner/form.css");
+
+/* Services */
+@import url("./services/services.css");

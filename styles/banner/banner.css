@@ -6,11 +6,11 @@
 }
 
 .banner-intro {
-  align-self: center;
+  align-self: stretch;
   background: #1a1a1a;
   display: grid;
   grid-template-columns: 1fr;
-  padding: 100px 40px;
+  padding: 40px 40px;
   border-radius: 30px;
   color: #ffffff;
 }
@@ -32,4 +32,8 @@
 
 .banner-intro a {
   margin-top: 32px;
+}
+
+.banner-intro-content {
+  align-self: center;
 }

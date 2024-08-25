@@ -1,0 +1,60 @@
+.reasons {
+  margin-top: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reasons h2 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.reasons-about {
+  margin-top: 16px;
+  max-width: 60ch;
+  font-size: 16;
+  line-height: 24px;
+  color: #cccccc;
+}
+
+.reasons-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.reasons-card {
+  background: linear-gradient(#2d3139, #0b101a);
+  border-radius: 24px;
+  box-sizing: border-box;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reasons-card img {
+  margin: 0 auto;
+}
+
+.reasons-card h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.reasons-card p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 20ch;
+}
+
+.reasons a {
+  margin-top: 40px;
+}

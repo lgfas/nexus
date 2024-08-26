@@ -13,3 +13,10 @@
 
 /* Reasons */
 @import url("./reasons/reasons.css");
+
+/* Process */
+@import url("./process/process.css");
+@import url("./process/points.css");
+
+/* Footer */
+@import url("./footer/footer.css");

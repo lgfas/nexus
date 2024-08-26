@@ -5,6 +5,20 @@
   gap: 80px;
 }
 
+.banner-decoration {
+  position: relative;
+}
+
+.banner-decoration::after {
+  content: "";
+  position: absolute;
+  background: url("../../assets/images/nexus-decoration.svg") no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  bottom: -200px;
+}
+
 .banner-intro {
   align-self: stretch;
   background: #1a1a1a;

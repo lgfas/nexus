@@ -1,0 +1,22 @@
+.points-img img {
+  border-radius: 30px;
+}
+
+.process-points-flex {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.process-points-flex-texts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.process-points-flex-texts p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}

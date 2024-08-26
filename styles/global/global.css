@@ -1,8 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   font-family: "Montserrat";
   color: #ffffff;
   background: #00050f;
+  overflow-x: hidden;
 }
 
 h1,

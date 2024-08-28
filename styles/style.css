@@ -20,3 +20,6 @@
 
 /* Footer */
 @import url("./footer/footer.css");
+
+/* animacoes */ 
+@import url("./animation/animation.css");

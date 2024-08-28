@@ -53,3 +53,19 @@
   top: -50px;
   z-index: -1;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+  .process { 
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+ .process-steps {
+  display: grid;
+  grid-template-columns: 1fr;
+ }
+ .button-footer {
+  justify-self: center;
+ }
+}

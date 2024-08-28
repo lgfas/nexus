@@ -50,3 +50,9 @@
 .services-card-content li + li {
   margin-top: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+  .services-cards { 
+    grid-template-columns: 1fr;
+  }
+}

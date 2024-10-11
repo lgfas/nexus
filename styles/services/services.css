@@ -3,8 +3,10 @@
 }
 
 .services h1 {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
 .services-cards {
@@ -52,7 +54,15 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .services-cards { 
+  .services h1 {
+    text-align: center;
+  }
+
+  .services-cards {
     grid-template-columns: 1fr;
+  }
+
+  .services-card img {
+    width: 100%;
   }
 }

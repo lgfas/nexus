@@ -18,8 +18,14 @@
 @import url("./process/process.css");
 @import url("./process/points.css");
 
+/* Profiles */
+@import url("./profiles/profiles.css");
+
+/* Profiles */
+@import url("./feedback/feedback.css");
+
 /* Footer */
 @import url("./footer/footer.css");
 
-/* animacoes */ 
+/* animacoes */
 @import url("./animation/animation.css");

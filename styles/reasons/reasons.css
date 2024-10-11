@@ -1,13 +1,29 @@
+.reasons-decoration {
+  position: relative;
+}
+
+.reasons-decoration::after {
+  content: "";
+  position: absolute;
+  background: url("../../assets/images/nexus-decoration-2.svg") no-repeat;
+  width: 372px;
+  height: 588px;
+  top: 0px;
+  right: 0px;
+  z-index: -1;
+}
+
 .reasons {
   margin-top: 80px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
+  justify-items: center;
 }
 
 .reasons h2 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -59,24 +75,8 @@
   margin-top: 40px;
 }
 
-.reasons-decoration {
-  position: relative;
-}
-
-.reasons-decoration::after {
-  content: "";
-  position: absolute;
-  background: url("../../assets/images/nexus-decoration-2.svg") no-repeat;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 80%;
-  z-index: -1;
-}
-
-
 @media only screen and (max-width: 768px) {
-  .reasons-cards { 
+  .reasons-cards {
     grid-template-columns: 1fr;
   }
 }

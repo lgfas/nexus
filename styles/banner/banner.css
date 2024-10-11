@@ -13,10 +13,10 @@
   content: "";
   position: absolute;
   background: url("../../assets/images/nexus-decoration.svg") no-repeat;
-  width: 100%;
-  height: 100%;
+  width: 343px;
+  height: 600px;
   z-index: -1;
-  bottom: -200px;
+  top: 80px;
 }
 
 .banner-intro {
@@ -53,8 +53,21 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .banner { 
+  .banner {
     grid-template-columns: 1fr;
     gap: 32px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .banner-intro p {
+    text-align: center;
+    max-width: 25ch;
+  }
+
+  .banner-intro-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 }

@@ -1,0 +1,83 @@
+.profiles-decoration {
+  position: relative;
+}
+
+.profiles-decoration::after {
+  content: "";
+  position: absolute;
+  background: url("../../assets/images/nexus-decoration-2.svg") no-repeat;
+  width: 372px;
+  height: 588px;
+  top: 150px;
+  right: 0px;
+  z-index: -1;
+}
+
+.profiles {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.profiles h1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.profile-card {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  background: linear-gradient(#2d3139, #0b101a);
+  border-radius: 24px;
+  box-sizing: border-box;
+  max-width: 700px;
+  align-items: center;
+}
+
+.profile-card:nth-child(3) {
+  justify-self: end;
+}
+
+.profile-card-text {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  padding-left: 40px;
+}
+
+.profile-card-text h3 {
+  font-size: 26px;
+}
+
+.profile-card-text span {
+  font-size: 18px;
+}
+
+.profile-card-text span::after {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+  background: #03ffa2;
+}
+
+.profile-card-text p {
+  font-size: 14px;
+  opacity: 70%;
+}
+
+.profile-card-img img {
+  object-fit: cover;
+  border-radius: 0px 24px 24px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-card {
+    grid-template-columns: 2fr 1fr;
+  }
+}

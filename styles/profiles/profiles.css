@@ -81,3 +81,23 @@
     grid-template-columns: 2fr 1fr;
   }
 }
+
+@media only screen and (max-width: 680px) {
+  .profile-card {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card-img {
+    grid-row: 1;
+  }
+
+  .profile-card-img img {
+    object-fit: cover;
+    border-radius: 24px 24px 0px 0px;
+  }
+
+  .profile-card-text {
+    margin-bottom: 40px;
+    padding: 0px 40px;
+  }
+}

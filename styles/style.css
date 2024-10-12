@@ -21,8 +21,11 @@
 /* Profiles */
 @import url("./profiles/profiles.css");
 
-/* Profiles */
+/* Feedbacks */
 @import url("./feedback/feedback.css");
+
+/* FAQ */
+@import url("./faq/faq.css");
 
 /* Footer */
 @import url("./footer/footer.css");

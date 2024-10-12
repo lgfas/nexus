@@ -1,5 +1,17 @@
 .feedbacks {
   margin-top: 80px;
+}
+
+.feedbacks h1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.feedback {
+  margin-top: 40px;
   background: linear-gradient(#2d3139, #0b101a);
   border-radius: 24px;
   box-sizing: border-box;
@@ -56,4 +68,44 @@
 .feedback-slide {
   display: flex;
   gap: 16px;
-} 
+}
+
+@media only screen and (max-width: 570px) {
+  .feedback-enterprise {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .feedback-enterprise h3 {
+    font-size: 28px;
+  }
+
+  .feedback-p {
+    font-size: 14px;
+  }
+
+  .feedback-footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .feedback-person {
+    text-align: center;
+  }
+
+  .feedback-person p {
+    position: relative;
+  }
+
+  .feedback-person p::after {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .feedback-person span {
+    margin-top: 10px;
+  }
+}

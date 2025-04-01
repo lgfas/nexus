@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -21,7 +21,7 @@
       <img src="./assets/images/nexus-logo.svg" alt="">
     </div>
 
-    <a href="https://wa.me/5599999999999" class="whatsapp-button" target="_blank">
+    <a href="https://wa.me/5598988035475" class="whatsapp-button" target="_blank">
       <img src="./assets/images/whatsapp.png" alt="WhatsApp">
     </a>
   </header>
@@ -38,7 +38,7 @@
 
       <div class="banner-form fade-in-up">
         <h3>Preencha seus dados e em breve um consultor entrará em contato.</h3>
-        <form id="form" class="form" action="">
+        <form id="form" class="form" action="https://nexusenergia.nexusenergia.com.br/obrigado.html" method="post" onsubmit="enviarParaGoogleSheets(event)">
           <div>
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome" placeholder="Seu nome">
@@ -52,8 +52,12 @@
             <input type="email" id="email" name="email" placeholder="Seu email">
           </div>
           <div>
-            <label for="mensagem">Mensagem</label>
-            <textarea rows="1" id="mensagem" name="mensagem" placeholder="Assunto"></textarea>
+            <label for="cnpj">CNPJ</label>
+            <input type="text" id="cnpj" name="cnpj" placeholder="Seu CNPJ">
+          </div>
+          <div>
+            <label for="conta">Conta</label>
+            <input type="text" id="conta" name="conta" placeholder="Qual o valor mensal da sua conta?">
           </div>
           <button class="button">Entrar em contato</button>
         </form>
@@ -256,53 +260,23 @@
           <img src="./assets/images/profile2.jpg" alt="">
         </div>
       </div>
-
-      <div class="profile-card fade-in-up">
-        <div class="profile-card-text">
-          <h3>Cláudio Martins</h3>
-          <span>CO-FUNDADOR</span>
-          <p>Possui mais de 6 anos de experiência com gestão de energia de grandes consumidores no Mercado Livre. Atuando em 9 estados do Brasil, com mais de 300 unidades gerenciadas.
-            Possui experiência com autoprodução no mercado livre, atuando em toda a parte administrativa junto à CCEE</p>
-        </div>
-        <div class="profile-card-img">
-          <img src="./assets/images/profile1.jpg" alt="">
-        </div>
-      </div>
     </div>
   </section>
 
   <section class="feedbacks-decoration">
-    <div class="container feedbacks">
+    <div class="container feedbacks" id="feedbacks">
       <h1>O QUE DIZEM SOBRE NOSSO SERVIÇO?</h1>
-      <div class="feedback">
+  
+      <!-- Feedback 1 com classe "active" -->
+      <div class="feedback active">
         <div class="feedback-enterprise">
           <h3>Upaon-Açu</h3>
           <ul>
-            <li>
-              <div>
-                <img src="./assets/images/star.svg" alt="">
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="./assets/images/star.svg" alt="">
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="./assets/images/star.svg" alt="">
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="./assets/images/star.svg" alt="">
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="./assets/images/star.svg" alt="">
-              </div>
-            </li>
+            <li><img src="./assets/images/star.svg" alt="star"></li>
+            <li><img src="./assets/images/star.svg" alt="star"></li>
+            <li><img src="./assets/images/star.svg" alt="star"></li>
+            <li><img src="./assets/images/star.svg" alt="star"></li>
+            <li><img src="./assets/images/star.svg" alt="star"></li>
           </ul>
         </div>
         <p class="feedback-p">A parceria com a Nexus Energia foi fundamental para otimizar o consumo de energia da Escola Upaon - Açu. A equipe nos guiou na migração para o Mercado Livre e na gestão dos contratos, resultando em uma redução significativa dos custos.</p>
@@ -311,54 +285,34 @@
             <p>Camila</p>
             <span>CEO Upaon-Açu</span>
           </div>
-          <div class="feedback-slide">
-            <div><img src="./assets/images/arrow-left.svg" alt=""></div>
-            <div><img src="./assets/images/arrow-right.svg" alt=""></div>
-          </div>
         </div>
       </div>
+  
+      <!-- Feedback 2 -->
       <div class="feedback">
         <div class="feedback-enterprise">
           <h3>Complexo Salvatore</h3>
           <ul>
-            <li>
-              <div>
-                <img src="./assets/images/star.svg" alt="">
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="./assets/images/star.svg" alt="">
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="./assets/images/star.svg" alt="">
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="./assets/images/star.svg" alt="">
-              </div>
-            </li>
-            <li>
-              <div>
-                <img src="./assets/images/star.svg" alt="">
-              </div>
-            </li>
+            <li><img src="./assets/images/star.svg" alt="star"></li>
+            <li><img src="./assets/images/star.svg" alt="star"></li>
+            <li><img src="./assets/images/star.svg" alt="star"></li>
+            <li><img src="./assets/images/star.svg" alt="star"></li>
+            <li><img src="./assets/images/star.svg" alt="star"></li>
           </ul>
         </div>
-        <p class="feedback-p">A parceria com a A Nexus Energia foi fundamental para o sucesso do projeto de usina solar do Complexo Salvatore. A equipe demonstrou grande conhecimento técnico e dedicou-se ao projeto de forma completa, realizando uma análise detalhada e precisa. A expertise da Nexus em otimização e eficiência energética, aliada à transparência e compromisso com a sustentabilidade, garantiu a confiança necessária para seguir em frente. Graças à Nexus, o projeto está no caminho certo para um futuro mais sustentável e economicamente viável.</p>
+        <p class="feedback-p">A parceria com a Nexus Energia foi fundamental para o sucesso do projeto de usina solar do Complexo Salvatore. A equipe demonstrou grande conhecimento técnico e dedicou-se ao projeto de forma completa, realizando uma análise detalhada e precisa. A expertise da Nexus em otimização e eficiência energética, aliada à transparência e compromisso com a sustentabilidade, garantiu a confiança necessária para seguir em frente.</p>
         <div class="feedback-footer">
           <div class="feedback-person">
             <p>Fernanda</p>
             <span>CEO Complexo Salvatore</span>
           </div>
-          <div class="feedback-slide">
-            <div><img src="./assets/images/arrow-left.svg" alt=""></div>
-            <div><img src="./assets/images/arrow-right.svg" alt=""></div>
-          </div>
         </div>
+      </div>
+  
+      <!-- Botões de navegação do slider -->
+      <div class="feedback-slide">
+        <div class="arrow-left"><img src="./assets/images/arrow-left.svg" alt="Previous"></div>
+        <div class="arrow-right"><img src="./assets/images/arrow-right.svg" alt="Next"></div>
       </div>
     </div>
   </section>
@@ -370,45 +324,45 @@
         <div class="accordion-item">
           <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">O que é o Mercado Livre de Energia?</span><span class="icon" aria-hidden="true"></span></button>
           <div class="accordion-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+            <p>O Mercado Livre de Energia permite que empresas e consumidores escolham de quem comprar sua energia elétrica, negociando diretamente com geradores ou comercializadores de energia para obter tarifas e condições melhores.</p>
           </div>
         </div>
         <div class="accordion-item">
           <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Eu já tenho uma usina, posso migrar para o Mercado Livre?
             </span><span class="icon" aria-hidden="true"></span></button>
           <div class="accordion-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+            <p>Sim, é possível migrar para o Mercado Livre de Energia, desde que a usina atenda aos requisitos regulatórios e operacionais. A Nexus pode auxiliar no processo e nas negociações.</p>
           </div>
         </div>
         <div class="accordion-item">
           <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">A Nexus trabalha com energia solar por assinatura?
             </span><span class="icon" aria-hidden="true"></span></button>
           <div class="accordion-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+            <p>Sim, a Nexus oferece energia solar por assinatura, permitindo que consumidores tenham acesso a energia renovável sem necessidade de investimento inicial em infraestrutura.</p>
           </div>
         </div>
         <div class="accordion-item">
           <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Como funciona a remuneração da Nexus?</span><span class="icon" aria-hidden="true"></span></button>
           <div class="accordion-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+            <p>A Nexus se remunera através de taxas de administração e transação, além de acordos específicos para gerenciamento e venda de energia, dependendo do contrato com o cliente.</p>
           </div>
         </div>
         <div class="accordion-item">
           <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Qual é o tempo médio para migrar para o Mercado Livre?</span><span class="icon" aria-hidden="true"></span></button>
           <div class="accordion-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+            <p>A migração para o Mercado Livre de Energia costuma levar de 6 a 12 meses, dependendo do perfil de consumo e dos prazos estabelecidos pela distribuidora.</p>
           </div>
         </div>
         <div class="accordion-item">
           <button id="accordion-button-6" aria-expanded="false"><span class="accordion-title">Quais são os benefícios de migrar para o Mercado Livre com a Nexus?</span><span class="icon" aria-hidden="true"></span></button>
           <div class="accordion-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+            <p>A Nexus oferece economia nos custos de energia, flexibilidade contratual, energia renovável e um suporte especializado para garantir melhores condições e segurança jurídica.</p>
           </div>
         </div>
         <div class="accordion-item">
           <button id="accordion-button-7" aria-expanded="false"><span class="accordion-title">Quais são os critérios para migrar para O Mercado Livre de Energia?</span><span class="icon" aria-hidden="true"></span></button>
           <div class="accordion-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+            <p>Todo cliente do Grupo A (que possui subestação própria) pode migrar para o mercado livre</p>
           </div>
         </div>
       </div>
@@ -421,6 +375,36 @@
 
   <script src="./js/animation.js"></script>
   <script src="./js/faq.js"></script>
+  <script src="./js/slide.js"></script>
+  <script src="./js/cnpj.js"></script>
+  <!--<script>-->
+  <!--  function enviarParaGoogleSheets(event) {-->
+  <!--    event.preventDefault();-->
+
+  <!--    const form = document.getElementById('form');-->
+  <!--    const formData = new FormData(form);-->
+
+  <!--    const scriptURL = 'https://script.google.com/macros/s/AKfycbzlPB-laaXTENMj5WtfPOtGzmJpE6dAH0lhccN-3HC20UA7FEa7G8BixDcRknhzjaTo3Q/exec';-->
+
+  <!--    fetch(scriptURL, {-->
+  <!--      method: 'POST',-->
+  <!--      mode: 'no-cors', -->
+  <!--      body: formData-->
+  <!--    })-->
+  <!--      .then(response => {-->
+  <!--        if (response.ok) {-->
+  <!--          window.location.href = 'https://nexusenergia.nexusenergia.com.br/obrigado.html';-->
+  <!--        } else {-->
+  <!--          alert('Falha ao enviar. Por favor, tente novamente.');-->
+  <!--        }-->
+  <!--      })-->
+  <!--      .catch(error => {-->
+  <!--        console.error('Erro:', error);-->
+  <!--        alert('Ocorreu um erro. Por favor, tente novamente.');-->
+  <!--      });-->
+  <!--  }-->
+  <!--</script>-->
+
 </body>
 
 </html>

@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+input {
+  color: #ffffff !important;
+}
 
 body {
   margin: 0px;

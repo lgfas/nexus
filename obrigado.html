@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrigado - Nexus Energia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/style.css">
+  <style>
+
+    .thank-you-banner {
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .thank-you-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+
+    .thank-you-content h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .thank-you-content p {
+      font-size: 1.25em;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .button-animate {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 1em;
+      color: #1a3f2b;
+      background: #03ffa2;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .button-animate:hover {
+      background-color: #03ffa2;
+    }
+
+    .reasons-decoration {
+      padding: 100px 0;
+      background: #111;
+    }
+
+    .reasons {
+      text-align: center;
+    }
+
+    .reasons h2 {
+      font-size: 2em;
+      margin-bottom: 40px;
+      color: #03ffa2;
+    }
+
+    .reasons-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .reasons-card {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 15px;
+      width: 300px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s;
+    }
+
+    .reasons-card:hover {
+      transform: scale(1.05);
+    }
+
+    .reasons-card img {
+      height: 50px;
+      margin-bottom: 20px;
+    }
+
+    .reasons-card h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .reasons-card p {
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .thank-you-content {
+        padding: 20px;
+      }
+
+      .reasons-cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .thank-you-banner {
+        padding: 60px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container logo">
+      <img src="./assets/images/nexus-logo.svg" alt="Nexus Energia Logo">
+    </div>
+  </header>
+
+  <main class="thank-you-banner">
+    <div class="container">
+      <div class="thank-you-content fade-in-up">
+        <h1>Obrigado por Entrar em Contato!</h1>
+        <p>Agradecemos por confiar na Nexus Energia. Em breve, um de nossos consultores entrará em contato com você para iniciar o seu caminho rumo a uma economia inteligente na sua conta de energia.</p>
+        <p>Estamos entusiasmados em ajudá-lo a encontrar as melhores soluções energéticas!</p>
+        <a class="button button-animate" href="index.html">Voltar para a Página Inicial</a>
+      </div>
+    </div>
+  </main>
+
+  <section class="reasons-decoration">
+    <div class="container reasons">
+      <h2>Por que Escolher a Nexus Energia?</h2>
+      <div class="reasons-cards">
+        <div class="reasons-card fade-in-up">
+          <div>
+            <img src="./assets/images/reasons-icon-1.svg" alt="Icone Economia Garantida">
+          </div>
+          <h3>Economia Garantida</h3>
+          <p>Reduza seus custos energéticos com estratégias comprovadas.</p>
+        </div>
+
+        <div class="reasons-card fade-in-up">
+          <div>
+            <img src="./assets/images/reasons-icon-2.svg" alt="Icone Previsibilidade Orçamentária">
+          </div>
+          <h3>Previsibilidade <br> Orçamentária</h3>
+          <p>Controle melhor seu fluxo de caixa com custos energéticos previsíveis.</p>
+        </div>
+
+        <div class="reasons-card fade-in-up">
+          <div>
+            <img src="./assets/images/reasons-icon-3.svg" alt="Icone Sustentabilidade">
+          </div>
+          <h3>Sustentabilidade</h3>
+          <p>Contribua para um futuro mais verde e reduza sua pegada de carbono.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 Nexus Energia. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="./js/animation.js"></script>
+</body>
+
+</html>
